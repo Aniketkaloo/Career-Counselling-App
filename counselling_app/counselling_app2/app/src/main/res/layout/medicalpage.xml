@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/white">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/titleTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical Fields"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Divider 1 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/titleTextView1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <!-- Table Header Row -->
+            <LinearLayout
+                android:id="@+id/headerRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Medical Field"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Description"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+
+            <!-- Divider 2 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/headerRow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Data Row 1 (Cardiology) -->
+            <LinearLayout
+                android:id="@+id/dataRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Cardiology"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="The branch of medicine that focuses on the study and treatment of heart diseases and disorders."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+
+            <!-- Divider 3 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/dataRow1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Data Row 2 (Dermatology) -->
+            <LinearLayout
+                android:id="@+id/dataRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Dermatology"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="The branch of medicine that deals with the study and treatment of skin, hair, and nail disorders."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+
+            <!-- Divider 4 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/dataRow2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Data Row 3 (Gastroenterology) -->
+            <LinearLayout
+                android:id="@+id/dataRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Gastroenterology"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Specializes in the diagnosis and treatment of disorders related to the digestive system."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+
+            <!-- Divider 5 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/dataRow3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Data Row 4 (Neurology) -->
+            <LinearLayout
+                android:id="@+id/dataRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Neurology"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Focuses on the diagnosis and treatment of diseases and disorders of the nervous system, including the brain and spinal cord."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+
+            <!-- Divider 6 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/dataRow4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Data Row 5 (Orthopedics) -->
+            <LinearLayout
+                android:id="@+id/dataRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Orthopedics"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Concentrates on the musculoskeletal system, treating bone, joint, and soft tissue disorders."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+
+            <!-- Divider 7 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/dataRow5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Data Row 6 (Ophthalmology) -->
+            <LinearLayout
+                android:id="@+id/dataRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Ophthalmology"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Deals with the study and treatment of eye disorders and diseases."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+
+            <!-- Divider 8 (Horizontal Line) -->
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/dataRow6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Data Row 7 (Pediatrics) -->
+            <LinearLayout
+                android:id="@+id/dataRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Field Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Pediatrics"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Description Column -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Focuses on the medical care of infants, children, and adolescents."
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Previous Year Cutoff Column -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dataRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/divider7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp">
+
+                <!-- Branch Column -->
+
+                <!-- Description Column -->
+
+                <!-- Previous Year Cutoff Column -->
+
+                <Button
+                    android:id="@+id/buttonHomePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="503dp"
+                    android:background="@layout/rounded_button"
+                    android:backgroundTint="@color/teal_200"
+                    android:onClick="medical_back"
+                    android:padding="16dp"
+                    android:text="Back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.049"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </LinearLayout>
+            <!-- Add more data rows here as needed -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

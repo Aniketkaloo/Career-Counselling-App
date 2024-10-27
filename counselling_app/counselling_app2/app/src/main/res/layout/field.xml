@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Back Arrow Button -->
+            <!-- Hello Text -->
+            <!-- Button -->
+
+            <!-- CardView 1 -->
+
+            <!-- CardView 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="246dp"
+                android:layout_height="95dp"
+                app:layout_constraintBottom_toTopOf="@+id/buttonHomePage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.465" >
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:text="            Medical"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:onClick="medical"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/medical"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonHomePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="503dp"
+                android:background="@layout/rounded_button"
+                android:backgroundTint="@color/teal_200"
+                android:onClick="back"
+                android:padding="16dp"
+                android:text="Back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- CardView 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="246dp"
+                android:layout_height="95dp"
+                app:layout_constraintBottom_toTopOf="@+id/buttonHomePage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.104" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:onClick="onGetStartedButtonClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:text="            Engineering"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/engineer"
+                    />
+            </androidx.cardview.widget.CardView>
+            <!-- CardView 4 -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:text="Checking Eligibility"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fstTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Select Category"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/mcqRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/cardview_default_radius">
+
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/teal_200"
+                android:text="Open"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/teal_200"
+                android:text="OBC"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/teal_200"
+                android:text="SC"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/teal_200"
+                android:text="ST"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:id="@+id/option5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/teal_200"
+                android:text="other"
+                android:textColor="@android:color/black" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/secTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="JEE/MhtCet Percentile"
+            android:textColor="@android:color/black" />
+
+
+        <EditText
+            android:id="@+id/txt12thPercentage"
+            android:layout_width="252dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/black"
+        />
+
+
+        <Button
+            android:id="@+id/Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@layout/rounded_button"
+            android:backgroundTint="@color/teal_200"
+            android:onClick="onGetStartedButton1Click3"
+            android:text="CHECK"/>
+        />
+    </LinearLayout>
+</ScrollView>
